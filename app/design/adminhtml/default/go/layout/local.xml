@@ -26,14 +26,24 @@
 	        <action method="removeItem"><type>js_css</type><name>extjs/resources/css/ytheme-magento.css</name></action>
 
              
-             <!-- ADD LESS FILES -->
+             <!-- +++++++++++++ ADD LESS FILES -->
             <action method="addItem"><type>skin_css</type><name>reset.less</name></action>
 	        <action method="addItem"><type>skin_css</type><name>boxes.less</name></action>
 	        <action method="addItem"><type>skin_css</type><name>custom.less</name></action>
-             
-             
+	        
+			<action method="addItem"><type>skin_css</type><name>menu.less</name><params>media="screen, projection"</params></action>
+			
+			<!-- IE conditional CSS styles -->             
+			<action method="addItem"><type>skin_css</type><name>iestyles.less</name><params/><if>lt IE 8</if></action>
+			<action method="addItem"><type>skin_css</type><name>below_ie7.less</name><params/><if>lt IE 7</if></action>
+			<action method="addItem"><type>skin_css</type><name>ie7.less</name><params/><if>IE 7</if></action>
                   
-                        
+            <!-- Print CSS -->
+			<action method="addCss"><name>print.less</name><params>media="print"</params></action>
+			
+			<!-- additional CSS -->
+			<action method="addItem"><type>skin_css</type><name>calendar.less</name><params/></action>
+			                        
         </reference>
         
         

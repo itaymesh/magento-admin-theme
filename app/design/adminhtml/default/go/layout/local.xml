@@ -27,6 +27,11 @@
 
              
              <!-- +++++++++++++ ADD LESS FILES -->
+             
+             <!-- RTL-LTR LESS files -->
+             <action method="addItem"><type>skin_css</type><name>bi-app/variables.less.less</name></action>
+             <action method="addItem"><type>skin_css</type><name>bi-app/mixins.less</name></action>	         
+             
             <action method="addItem"><type>skin_css</type><name>reset.less</name></action>
 	        <action method="addItem"><type>skin_css</type><name>boxes.less</name></action>
 	        <action method="addItem"><type>skin_css</type><name>custom.less</name></action>

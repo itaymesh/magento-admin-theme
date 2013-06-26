@@ -25,6 +25,13 @@
 	        <action method="removeItem"><type>js_css</type><name>extjs/resources/css/ext-all.css</name></action>
 	        <action method="removeItem"><type>js_css</type><name>extjs/resources/css/ytheme-magento.css</name></action>
 
+             
+             <!-- ADD LESS FILES -->
+            <action method="addItem"><type>skin_css</type><name>reset.less</name></action>
+	        <action method="addItem"><type>skin_css</type><name>boxes.less</name></action>
+	        <action method="addItem"><type>skin_css</type><name>custom.less</name></action>
+             
+             
                   
                         
         </reference>

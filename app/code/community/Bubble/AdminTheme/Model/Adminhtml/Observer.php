@@ -9,12 +9,7 @@ class Bubble_AdminTheme_Model_Adminhtml_Observer
         foreach (array('layout', 'template', 'skin', 'locale') as $type) {
             Mage::getDesign()->setTheme($type, $theme);
         }
-        
-        
-        $headBlock = Mage::getLayout()->getBlock('head');
-        
-        $headBlock->addCss('app.css');
-        
+                
     }
     
     public function setLessVariables(Varien_Event_Observer $observer) {

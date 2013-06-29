@@ -28,7 +28,10 @@
              
              <!-- +++++++++++++ ADD LESS FILES -->
              
+             <action method="addItem"><type>skin_css</type><name>app.less</name></action>
+             
              <!-- RTL-LTR LESS files -->
+             <!--
              <action method="addItem"><type>skin_css</type><name>bi-app/variables.less</name></action>
              <action method="addItem"><type>skin_css</type><name>bi-app/mixins.less</name></action>	         
              
@@ -38,17 +41,17 @@
 	        
 			<action method="addItem"><type>skin_css</type><name>menu.less</name><params>media="screen, projection"</params></action>
 			
-			<!-- IE conditional CSS styles -->             
+			             
 			<action method="addItem"><type>skin_css</type><name>iestyles.less</name><params/><if>lt IE 8</if></action>
 			<action method="addItem"><type>skin_css</type><name>below_ie7.less</name><params/><if>lt IE 7</if></action>
 			<action method="addItem"><type>skin_css</type><name>ie7.less</name><params/><if>IE 7</if></action>
                   
-            <!-- Print CSS -->
+            
 			<action method="addCss"><name>print.less</name><params>media="print"</params></action>
 			
-			<!-- additional CSS -->
+			
 			<action method="addItem"><type>skin_css</type><name>calendar.less</name><params/></action>
-			                        
+			-->                        
         </reference>
         
         

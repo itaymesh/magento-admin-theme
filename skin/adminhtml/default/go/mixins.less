@@ -51,6 +51,7 @@
   padding: @top @left @bottom @right;
 }
 
+
 // margin
 // ------------------------------------------
 .margin-left(@distance) when (@bi-app-left = left) {
@@ -110,6 +111,10 @@
 }
 
 .text-align(@direction) when (@direction = right) {
+  .bi-app-text-align-right;
+}
+
+.text-align(@direction) when (@direction = center) {
   .bi-app-text-align-right;
 }
 
@@ -318,11 +323,15 @@
 }
 
 
-.background-position(@top) when (@bi-app-right = left) {
-	background-position:0, @top;
+.background-position(@left, @top) when (@bi-app-left = left) {
+	background-position:@left @top;
 }
 
-.background-position(@top) when (@bi-app-right = right) {
-	background-position:100%, @top;
+.background-position(@left, @top) when (@bi-app-left = right) and (@left = 100%) {
+	background-position:0 @top;
+}
+
+.background-position(@left, @top) when (@bi-app-left = right) and (@left = 0) {
+	background-position:100% @top;
 }
 

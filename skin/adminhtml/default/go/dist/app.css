@@ -2329,6 +2329,18 @@ h3 {
   color: #f15a24;
   word-wrap: break-word;
 }
+/* Icon Head */
+/* Headings with icon preceding text*/
+.icon-head {
+  min-height: 18px;
+  background-repeat: no-repeat;
+  background-position: 0 8px;
+  padding-left: 22px;
+}
+.entry-edit .entry-edit-head .icon-head {
+  background-position: 0 6px;
+  margin-left: 13px;
+}
 html[lang="de"] .side-col h3 {
   font-size: 24px;
 }
@@ -2401,18 +2413,6 @@ html[lang="de"] .side-col h3 {
 .box-head h4 {
   float: left;
   margin-bottom: 0;
-}
-/* Icon Head */
-/* Headings with icon preceding text*/
-.icon-head {
-  min-height: 18px;
-  background-repeat: no-repeat;
-  background-position: 0 8px;
-  padding-left: 22px;
-}
-.entry-edit .entry-edit-head .icon-head {
-  background-position: 0 6px;
-  margin-left: 13px;
 }
 .head-adminhtml {
   padding-left: 0;

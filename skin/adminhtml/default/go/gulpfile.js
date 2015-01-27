@@ -16,20 +16,22 @@ var rename     = require('gulp-rename');
 var cssflip =        require('gulp-css-flip');
 
 gulp.task('less', function() {
-    return gulp.src('less/app.less')
-
+    gulp.src('less/app.less')
         .pipe(less()).on('error', function(e){
             util.log(e);
         })
         //.pipe(minifycss())
         .pipe(gulp.dest('dist'))
-        //.pipe(rename({suffix: '-rtl'}))
-        //.pipe(cssflip.gulp())
-        //.pipe(gulp.dest('dist/css'))
+        .pipe(less()).on('error', function(e){
+            util.log(e);
+        })
+        .pipe(rename({suffix: '-rtl'}))
+        .pipe(cssflip.gulp())
+        .pipe(gulp.dest('dist'))
         .pipe(livereload(server))
         .pipe(notify({
             message: 'Successfully compiled LESS'
-        }));
+    }));
 });
 
 // Watch

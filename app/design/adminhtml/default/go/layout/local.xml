@@ -1,23 +1,22 @@
 <?xml version="1.0"?>
 <layout version="0.1.0">
-    <default translate="label" module="page">
-        <reference name="head">
-            <!-- remove all default CSS files -->
-	        <action method="removeItem"><type>skin_css</type><name>reset.css</name></action>
-	        <action method="removeItem"><type>skin_css</type><name>boxes.css</name></action>
-	        <action method="removeItem"><type>skin_css</type><name>custom.css</name></action>
-	        <action method="removeItem"><type>skin_css</type><name>iestyles.css</name></action>
-	        <action method="removeItem"><type>skin_css</type><name>below_ie7.css</name></action>
-	        <action method="removeItem"><type>skin_css</type><name>ie7.css</name></action>
-	        <action method="removeItem"><type>skin_css</type><name>print.css</name></action>
-	        <action method="removeItem"><type>skin_css</type><name>menu.css</name></action>
-	        <action method="removeItem"><type>js_css</type><name>calendar/calendar-win2k-1.css</name></action>
-	        <action method="removeItem"><type>js_css</type><name>extjs/resources/css/ext-all.css</name></action>
-	        <action method="removeItem"><type>js_css</type><name>extjs/resources/css/ytheme-magento.css</name></action>
+	<default translate="label" module="page">
+		<reference name="head">
+			<!-- remove all default CSS files -->
+			<action method="removeItem"><type>skin_css</type><name>reset.css</name></action>
+			<action method="removeItem"><type>skin_css</type><name>boxes.css</name></action>
+			<action method="removeItem"><type>skin_css</type><name>custom.css</name></action>
+			<action method="removeItem"><type>skin_css</type><name>iestyles.css</name></action>
+			<action method="removeItem"><type>skin_css</type><name>below_ie7.css</name></action>
+			<action method="removeItem"><type>skin_css</type><name>ie7.css</name></action>
+			<action method="removeItem"><type>skin_css</type><name>print.css</name></action>
+			<action method="removeItem"><type>skin_css</type><name>menu.css</name></action>
+			<action method="removeItem"><type>js_css</type><name>calendar/calendar-win2k-1.css</name></action>
+			<action method="removeItem"><type>js_css</type><name>extjs/resources/css/ext-all.css</name></action>
+			<action method="removeItem"><type>js_css</type><name>extjs/resources/css/ytheme-magento.css</name></action>
 
-             <action method="addItem"><type>skin_css</type><name>dist/app.css</name></action>
+			<!-- theme css file is loaded via event handler to manage RTL-LTR -->
+		</reference>
 
-        </reference>
-
-    </default>
+	</default>
 </layout>

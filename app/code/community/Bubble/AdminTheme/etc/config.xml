@@ -30,14 +30,6 @@
                     </bubble_admintheme_admin_predispatch>
                 </observers>
             </adminhtml_controller_action_predispatch_start>
-            <soczed_less_additional_variables>
-				<observers>
-					<bubble_admintheme_less_additional_variables>
-						<class>Bubble_AdminTheme_Model_Adminhtml_Observer</class>
-						<method>setLessVariables</method>
-					</bubble_admintheme_less_additional_variables>
-				</observers>
-			</soczed_less_additional_variables>
         </events>
     </global>
     <admin>
@@ -76,6 +68,17 @@
                 <label>Magento Go</label>
             </go>
         </themes>
+        <events>
+            <controller_action_layout_generate_blocks_after>
+                <observers>
+                    <bubble_admintheme>
+                        <type>singleton</type>
+                        <class>Bubble_AdminTheme_Model_Adminhtml_Observer</class>
+                        <method>controllerActionLayoutLoadBefore</method>
+                    </bubble_admintheme>
+                </observers>
+            </controller_action_layout_generate_blocks_after>
+        </events>
     </adminhtml>
     <default>
         <bubble_admintheme>

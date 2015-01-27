@@ -15,7 +15,7 @@
 	        <action method="removeItem"><type>js_css</type><name>extjs/resources/css/ext-all.css</name></action>
 	        <action method="removeItem"><type>js_css</type><name>extjs/resources/css/ytheme-magento.css</name></action>
 
-             <action method="addItem"><type>skin_css</type><name>dist/app.less</name></action>
+             <action method="addItem"><type>skin_css</type><name>dist/app.css</name></action>
 
         </reference>
 

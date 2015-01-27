@@ -2,13 +2,27 @@
 // BOOTSTRAP LIBRARY 
 // ------------------------------------------
 
-// @import 'bootstrap/bootstrap.less';
 
-// @import 'styles.less';
+//@import 'variables-ltr.less';
+//@import 'variables-rtl.less';
+// add RTL LTR variables through soczed_less_additional_variables event observer. 
+// see /app/code/community/Bubble/AdminTheme/etc/config.xml
+
+@import 'mixins.less';         
  
-//@import 'bootstrap/responsive.less';
+@import 'reset.less';
+@import 'boxes.less';
+
+@import 'menu.less';
 
 
-//@import 'bootstrap-extensions/selectBoxIt.less';
- 
+          
+//@import 'iestyles.less';
+//@import 'below_ie7.less';
+//@import 'ie7.less';
+      
+//@import 'print.less';
 
+//@import 'custom.less';
+
+@import 'calendar.less';

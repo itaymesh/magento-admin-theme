@@ -1,0 +1,16 @@
+{
+  "name": "itaymesh/magento-admin-theme",
+  "description": "Magento Admin Go Theme With RTL support.",
+  "type": "magento-module",
+  "homepage": "https://github.com/itaymesh/magento-admin-theme",
+  "license": "OSL-3.0",
+  "authors": [
+    {
+      "name": "Studio Raz",
+      "email": "team@studioraz.co.il"
+    }
+  ],
+  "require": {
+    "magento-hackathon/magento-composer-installer": "2.*"
+  }
+}

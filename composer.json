@@ -9,8 +9,5 @@
       "name": "Studio Raz",
       "email": "team@studioraz.co.il"
     }
-  ],
-  "require": {
-    "magento-hackathon/magento-composer-installer": "2.*"
-  }
+  ]
 }
